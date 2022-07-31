@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do Triângulo</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  </head>
+
+  <body>
+    <header class="w3-container w3-teal w3-col">
+      <div class="w3-left">
+        <h2 class="w3-bar-item">Área do Triângulo</h2>
+      </div>
+      <div class="w3-right">
+        <h6></h6>
+        <a href="index.html" class="w3-button">Média</a>
+        <a href="cubo.html" class="w3-button">Cubo</a>
+        <a href="circulo.html" class="w3-button">Círculo</a>
+        <a href="cilindro.html" class="w3-button">Cilindro</a>
+      </div>
+    </header>
+
+    <div class="w3-container w3-half w3-margin-top">
+      <form class="w3-container w3-card-4" name="formTri">
+        <p class="w3-left">
+          <label>Base:</label>
+          <input
+            class="w3-input"
+            type="text"
+            style="width: 70%;"
+            required
+            name="base"
+          />
+        </p>
+        <p class="w3-left">
+          <label>Altura:</label>
+          <input
+            class="w3-input"
+            type="text"
+            style="width: 70%;"
+            required
+            name="altura"
+          />
+        </p>
+        <img
+          src="assets/aT.png"
+          class="w3-round w3-right"
+          alt="Área do Triângulo"
+          style="max-width: 150px;"
+        />
+        <p class="w3-left">
+          <button
+            class="w3-button w3-section w3-teal w3-ripple"
+            type="button"
+            onclick="aTriangulo()"
+          >
+            Calcular
+          </button>
+          <button
+            class="w3-button w3-section w3-teal w3-ripple"
+            type="reset"
+            onclick="limpar()"
+          >
+            Limpar
+          </button>
+        </p>
+      </form>
+
+      <div id="divresultado"></div>
+    </div>
+    <script defer src="calculos.js"></script>
+  </body>
+</html>
